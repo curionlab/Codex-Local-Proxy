@@ -47,7 +47,7 @@ Local LLM server expects the standard Chat Completions `function` tool schema. W
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/Codex-Local-Proxy.git
+git clone https://github.com/curionlab/Codex-Local-Proxy.git
 cd Codex-Local-Proxy
 npm install
 ```

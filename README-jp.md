@@ -47,7 +47,7 @@ Codex CLI は OpenAI の最新の Responses API (`/v1/responses`) を実装し�
 ## インストール
 
 ```bash
-git clone https://github.com/yourusername/Codex-Local-Proxy.git
+git clone https://github.com/curionlab/Codex-Local-Proxy.git
 cd Codex-Local-Proxy
 npm install
 ```
