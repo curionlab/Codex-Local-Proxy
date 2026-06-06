@@ -1,0 +1,16 @@
+# Example profile-specific config (e.g., ~/.codex/lm-studio.config.toml)
+
+# Set the target model loaded in LM Studio
+model = "google/gemma-4-e4b"
+
+# Use the proxy provider defined in your main config.toml
+model_provider = "localproxy"
+
+# Standard Sandbox and Approval policies
+sandbox_mode = "workspace-write"
+approval_policy = "never"
+hide_agent_reasoning = false
+approvals_reviewer = "user"
+
+[sandbox_workspace_write]
+network_access = true

@@ -1,0 +1,19 @@
+# Example global config (e.g., ~/.codex/config.toml)
+
+[model_providers.localproxy]
+name = "Local Proxy"
+# Point this to the port where Codex-Local-Proxy is running
+base_url = "http://127.0.0.1:3001/"
+
+# --- Example of configuring a local MCP server ---
+[mcp_servers.my-local-mcp]
+command = "node"
+# Path to your custom MCP server
+args = ["/path/to/your/mcp-server/index.js"]
+cwd = "/path/to/your/mcp-server"
+# Explicitly list the tools you want Codex to have access to
+enabled_tools = ["my_custom_tool", "another_tool"]
+
+[mcp_servers.my-local-mcp.tools.my_custom_tool]
+# Set approval mode if required
+approval_mode = "approve"
